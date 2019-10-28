@@ -1,0 +1,27 @@
+<html> 
+  <head> 
+    <title></title> 
+    <script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="reference.js"> </script>
+    <script type="text/javascript" src="admin.js"> </script>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+  </head> 
+  <body> 
+  <H1></H1>
+	<H2 style="font-family:verdana">Admin page</H2>
+        <form>
+        <p>1. Click below button to search for all unassigned booking requests with a pick-up time within 2 hours.</p>
+        <input type = "button" value = "List All" name = "value" OnClick = "getData ('adminprocess.php', 'targetDiv')"/><br><br>
+        </form>
+        <div id = "targetDiv">
+        </div>
+        
+        <form>
+        <p>2. Input a reference number below and click upodate button to assign a taxi to that request.</p>
+        <input type = "text" name = "bookingNo">
+        <input type="button" value = "Submit" OnClick = "getReference ('reference.php', 'targetDiv2',bookingNo.value)"/><br><br>
+        </form>
+        <div id = "targetDiv2">
+        </div>     	
+  </body> 
+</html>

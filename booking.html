@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+        <script type="text/javascript" src="xhr.js"></script>
+        <script type="text/javascript" src="booking.js"> </script>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<H1></H1>
+        <H2 style="font-family:verdana">Taxi Booking Page</H2>
+	<form>
+			<p>Customer name:</td><td><input type="text" name="pName"  placeholder = "required" required="required"/></p>
+			<p>Contact number:</td><td><input type="text" name="pPhone" placeholder = "required" required="required"/></p>
+                        <p>Pick up address:</td><td>Unit number:<input type="text" name="UnitNo"  placeholder = "applicable">
+			   Street number:<input type="text" name="StreetNo" placeholder = "required" required="required"/>
+			   Street name:<input type="text" name="StreetName" placeholder = "required" required="required"/>
+			   Suburb:<input type="text" name="Suburb" placeholder = "required" required="required"/></p>
+                        <p>Destination suburb:</td><td><input type="text" name="Dsuburb" placeholder = "required" required="required"/></p>
+			<p>Pickup date:</td><td><input type="text" name="pDate" placeholder = "e.g dd/mm/yyyy" required="required"/></p>
+			<p>Pickup time:</td><td><input type="text" name="pTime" placeholder = "24hrs format e.g 00:00" required="required"/></p>
+		        <input type = "button" value = "Book" OnClick = "getData ('bookingprocess.php', 'targetDiv', pName.value, pPhone.value, UnitNo.value, StreetNo.value, StreetName.value, Suburb.value, Dsuburb.value, pDate.value, pTime.value)"/>
+	        
+        </form>
+        <div id = "targetDiv">
+        </div>
+</body>
+</html> 
